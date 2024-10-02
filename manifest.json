@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music Playlist Generator",
+  "version": "1.0",
+  "description": "Detects song compilation videos and generates a YouTube Music Playlist.",
+  "permissions": ["activeTab", "storage", "identity", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "427455411999-fafidcp7fau3c2fkbkotsobfh6faijhq.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/youtube",
+      "https://www.googleapis.com/auth/youtube.force-ssl"
+    ]
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
