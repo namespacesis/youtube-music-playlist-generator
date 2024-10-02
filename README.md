@@ -1,5 +1,5 @@
 # youtube-music-playlist-generator
-An extension program that extracts a playlist of YouTube music videos and generates a YouTube music playlist
+An Chrome extension program that extracts a playlist of YouTube music videos and generates a YouTube music playlist
 
 ![icon128](https://github.com/user-attachments/assets/d6846a28-c2ab-4915-93f0-776dab6f1d22)
 
