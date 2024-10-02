@@ -22,7 +22,7 @@
         padding: 20px;
         max-width: 300px;
         width: 100%;
-        margin: auto; /* 추가로 중앙 배치 */
+        margin: auto;
       }
 
       h3 {
@@ -57,12 +57,17 @@
       button:focus {
         outline: none;
       }
+
+      button:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h3>Create Playlist</h3>
-      <button id="createPlaylist">Create Playlist</button>
+      <button id="createPlaylist" disabled>Create Playlist</button>
     </div>
 
     <script src="popup.js"></script>
