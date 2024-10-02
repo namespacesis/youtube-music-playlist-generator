@@ -5,7 +5,7 @@
   "description": "Detects song compilation videos and generates a YouTube Music Playlist.",
   "permissions": ["activeTab", "storage", "identity", "scripting"],
   "background": {
-    "service worker": "background.js"
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
@@ -17,7 +17,7 @@
     "default_popup": "popup.html"
   },
   "oauth2": {
-    "client_id": "338997608745-cn6m35mepnup66empkp29gnoa0mim7ve.apps.googleusercontent.com",
+    "client_id": "427455411999-fafidcp7fau3c2fkbkotsobfh6faijhq.apps.googleusercontent.com",
     "scopes": [
       "https://www.googleapis.com/auth/youtube",
       "https://www.googleapis.com/auth/youtube.force-ssl"
